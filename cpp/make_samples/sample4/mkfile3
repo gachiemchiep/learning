@@ -1,0 +1,11 @@
+.c.o: 
+	@echo "Compiling" $< "..."
+	cc -c $<
+
+app: main.o mod_a.o mod_b.o
+	@echo "Building target" $@ "..." 
+	cc -o app main.o mod_a.o mod_b.o
+
+
+
+ 

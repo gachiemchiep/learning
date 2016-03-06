@@ -1,0 +1,7 @@
+.SUFFIXES: .txt .log
+
+.txt.log:	
+	@echo "Converting " $< " to " $*.log
+	mv $< $*.log
+	
+

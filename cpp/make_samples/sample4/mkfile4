@@ -1,0 +1,14 @@
+OBJS=main.o mod_a.o mod_b.o
+
+.c.o: 
+	@echo "Compiling" $< "..."
+	cc -c $<
+
+app: main.o mod_a.o mod_b.o
+	@echo "Building target" $@ "..." 
+	cc -o app main.o mod_a.o mod_b.o
+
+$(OBJS): inc_a.h inc_b.h
+
+
+ 
