@@ -1,0 +1,36 @@
+Serial Terminal Basics
+========================
+
+serial communication: https://learn.sparkfun.com/tutorials/serial-communication
+
+there are two groups synchronous and asynchronous
+
+https://learn.sparkfun.com/tutorials/how-to-read-a-schematic
+
+https://learn.sparkfun.com/tutorials/working-with-wire
+
+https://learn.sparkfun.com/tutorials/analog-vs-digital
+
+https://learn.sparkfun.com/tutorials/logic-levels
+
+https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi
+
+https://learn.sparkfun.com/tutorials/i2c
+
+https://learn.sparkfun.com/tutorials/gps-basics
+
+https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu-retired
+
+https://learn.sparkfun.com/tutorials/terminal-basics/all
+
+
+Database:
+-----------
+tutorial :
+http://www.atmarkit.co.jp/ait/articles/1105/30/news130.html
+https://www.edifist.co.jp/lecture/dbdesign/index.aspx
+
+
+http://www.atmarkit.co.jp/ait/subtop/jibun/lskill/
+
+http://www.atmarkit.co.jp/ait/articles/1110/31/news129.html

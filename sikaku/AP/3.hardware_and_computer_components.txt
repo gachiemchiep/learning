@@ -1,0 +1,46 @@
+ハードウェアとコンピュータの構成要素
+===============================
+
+概要
+
+ハードウェア
+----------
+
+組合せ論理回路
+    論理回路のcomponent:
+        AND、NAND、OR、NOR、XOR、NOTゲート
+    論理回路の設計
+        真理値表の作成
+        論理値を求める
+        論理回路を設計
+    論理回路の例
+        半加算
+        NAND
+
+順序論理回路（過去や現在の入力を利用）
+    フリップ不ロップ回路
+
+FPGAとシステムLSI
+    PLD（Programmable Logic Device）
+    FPGA（Field Programmable Gate Array）
+    LSI、カスタムIC、ASIC、SoC
+
+プロセッサアーキテクチャ
+--------------------
+
+プロセッサの方式
+    CISC(Complex Instruction Set Computer)
+    RISC(Reduced Instruction Set Computer)
+        パイプライン処理
+    ワイヤードロジック方式
+    マイクロプログラム方式
+    ファームウェア
+
+プロセスの構成と動作
+    プロセスの構成
+        制御装置、演算装置、レジスタなど
+    プログラムのロード
+    命令の実行
+
+
+
