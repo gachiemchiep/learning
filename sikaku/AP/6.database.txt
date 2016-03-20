@@ -47,6 +47,91 @@ E-R図    -> ***
 正規化
 -----
 
+関数従属
+    部分関数従属
+        商品番号だけ ー＞ 商品名、単価が分かる
+        商品名と単価 は 主キー（商品番号） に 部分関数従属
+    完全関数従属
+        売上番号 + 商品番号 ー＞ 数量 が 分かる
+        数量 は 主キー（売上番号と商品晩報） に 完全関数従属
+    推移的関数従属
+        А（主キー） ー＞ B（非キー項目） ー＞ C（非キー項目） + not (B ー＞ A)
+
+正規化の手順
+    第1正規化
+        ”集団項目と繰り返し項目” を排除
+    第1正規形におけるデータ操作での不具合
+        修正時異常、挿入時異常、削除時異常
+    第2正規化
+        全ての項目 が ”完全関数従属状態” にする
+    第3正規化
+        推移的関数従属 を 削除 した状態にする
+    正規化の目的
+        データベース操作に伴う更新時異常発性を防ぐ ー＞ 検索用時間が増加する
+
+関係データベースの演算
+-------------------
+
+集合演算
+    和、共通（積）、差、直積演算
+
+関係演算
+    選択と射影
+    結合
+        SELECT .... FROM ... WHERE
+    内結合と外結合
+        内結合
+            SELECT ... FROM ... INNER JOIN ... ON ...
+        左外結合
+            SELECT ... FROM ... LEFT OUTER JOIN ... ON ...
+        右外結合
+            SELECT ... FROM ... RIGHT OUTER JOIN ... ON ...
+        完全外結合
+            SELECT ... FROM ... FULL OUTER JOIN ... ON ...
+
+SQL
+----
+
+SQL : Structured Query Language
+
+SQL文：
+    CREATE、DROP,GRANT,REVOKE
+    SELECT,INSERT,UPDATE,DELETE,COMMIT,ROLLBACK,DECLARE CURSOR,OPEN,FETCH,CLOSE
+
+後で例を追加 -> TODO
+
+データ定義言語
+-----------
+
+実表の定義
+    CREATE TABLE ...
+    データベースのトリガ
+
+ビューの定義
+    CREATE VIEW AS SELECT文
+
+オブジェクト（表）の処理権限
+    権限：読取（SELECT）、挿入（INSERT）、削除（DELETE）、更新（UPDATE）
+    処理権限の付与
+        GRANT 権限 ON ... TO ...
+    処理権限の変更
+        REVOKE 権限 ON 表名 FROM ...
+
+埋込み方式
+---------
+
+動的SQLと静的SQL
+    ホスト関数
+
+カーソル処理とFETCH -> よくわからない、TODO
+
+データベース管理システム
+---------------------
+
+
+
+
+
 
 
 
