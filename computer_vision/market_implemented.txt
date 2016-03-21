@@ -1,0 +1,5 @@
+Những ứng dụng thực tế ngoài thị trường
+========================================
+
+IBM者の物体認識API
+    https://visual-recognition-demo.mybluemix.net/

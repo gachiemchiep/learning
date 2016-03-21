@@ -1,7 +1,15 @@
+組み込み
+=========
+
+電子工学
+    http://monoist.atmarkit.co.jp/mn/series/1799/
+
+
 Serial Terminal Basics
 ========================
 
-serial communication: https://learn.sparkfun.com/tutorials/serial-communication
+serial communication:
+    https://learn.sparkfun.com/tutorials/serial-communication
 
 there are two groups synchronous and asynchronous
 
@@ -27,10 +35,25 @@ https://learn.sparkfun.com/tutorials/terminal-basics/all
 Database:
 -----------
 tutorial :
+
 http://www.atmarkit.co.jp/ait/articles/1105/30/news130.html
+
+
 https://www.edifist.co.jp/lecture/dbdesign/index.aspx
 
 
 http://www.atmarkit.co.jp/ait/subtop/jibun/lskill/
 
 http://www.atmarkit.co.jp/ait/articles/1110/31/news129.html
+
+
+http://www.eleki-jack.com/cat21/
+
+組み込み入門者
+--------------
+
+http://keisukekatsuki.hatenablog.com/entry/20110414/p1      -> not useful
+
+http://monoist.atmarkit.co.jp/mn/subtop/features/embedded_index/beginner.html
+
+http://monoist.atmarkit.co.jp/mn/subtop/embedded/   ***
