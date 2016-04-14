@@ -1,0 +1,8 @@
+配った本の中に暗記すべき言語を記載する
+====================================
+
+IKB Integration Knowledge Base
+    ikb.solnet.ssg.fujitsu.com
+
+SE情報ポタル
+    s-navi.solnet.ssg.fujitsu.com
