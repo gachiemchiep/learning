@@ -1,0 +1,55 @@
+20160416
+
+                                ****************
+                                ****************
+                                ****************
+    ****                        ****************
+    ****                        ****************
+    ****                        ****************
+    ****                        ****************
+    ****                        ****************
+    ****                        ****************
+                                ****************
+    camera, smartphone          ****************
+                                ****************
+
+                                    Bảng
+     **
+     **
+
+    remote
+
+
+    Tóm tắt:
+        Viết lên trên bảng, nhấn remote, camera chụp nội dung trên bảng, lưu vào máy tính
+    Yêu cầu:
+        Camera focus lấy hết được bảng
+            cố định camera
+                -> dùng 1 cái giá
+            Cố định bằng tay
+            Tự động
+                -> *****
+        remote:
+            ấn nút
+                -> *
+            Hoặc dùng motion của người để điều khiển
+                -> ***
+        Chụp ảnh trên bảng
+        Lưu nội dung
+            Dưới dạng ảnh
+            Chuyển dạng ảnh sang text
+                Dưới dạng word
+                    -> *****
+                Dưới dạng pdf
+                    -> *****
+        Lưu vào máy tính
+            Lưu vào local
+                -> *
+            Tự động upload lên trên cloud
+                -> *
+
+
+
+
+
+
