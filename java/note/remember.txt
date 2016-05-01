@@ -1,0 +1,14 @@
+1. how to compile
+
+class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
+}
+
+javac Hello.java
+java Hello
+
+javac -encoding UTF8 Test.java
+
+

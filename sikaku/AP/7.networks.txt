@@ -80,6 +80,7 @@ IPアドレスの構成
         NAT：Network Address Translation
         IPマスカレード: IPMasquerade
     IPv6: 128bビット + IPsecが必須になる
+TODO
 
 ネットワーク（LAN）
 ----------------
@@ -96,6 +97,7 @@ LAN間接続装置 *
 VLAN（仮想LAN）
     ポートベスVLAN
     タグVLAN
+    TODO
 
 ネットワーク管理
     DHCP：Dynamic Host Configuration
@@ -150,6 +152,7 @@ VPN（Virtual Private Network）
 
 交換方式
 -------
+TODO
 
 パケット交換方式：
     回線交換方式：通信を行うノード間で物理的な通信路を確保してから通信を開始

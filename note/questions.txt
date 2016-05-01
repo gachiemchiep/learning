@@ -1,0 +1,39 @@
+20160427
+--------------
+
+Linux, Windowsのプロセス管理
+
+プロセスからどんな情報を取れる
+    情報取る手法
+        semaphore, log など
+
+read http://lass.cs.umass.edu/~shenoy/courses/fall15/lectures/
+
+OS Service Hardware Support
+Protection Kernel/user mode, protected instructions, base/limit registers
+Interrupts Interrupt vectors
+System calls Trap instructions and trap vectors
+I/O Interrupts and memory mapping
+Scheduling, error recovery, accounting Timer
+Syncronization Atomic instructions
+Virtual memory Translation look-aside buffers
+
+System Calls  : Win32 API, POSIX API, Java API
+
+Process Control Block (PCB): OS data structure to keep track of all processes
+
+Communication among threads is typically done through shared variables
+
+semaphores  : have many draw backs
+
+-> use a higher level primitive called  "monitors"
+
+deadlock
+
+
+Processes & Threads
+CPU Scheduling
+Synchronization & Deadlock
+Memory Management
+File Systems and I/O Storage
+Distributed Systems
