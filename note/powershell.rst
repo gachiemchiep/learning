@@ -5,7 +5,7 @@ to show the help
 
 or go to
     https://technet.microsoft.com/library/bb978526
-
+    https://technet.microsoft.com/en-us/library/bb978526.aspx?tduid=%287881a02c699bb4baac4b4a92286b9504%29%28256380%29%282459594%29%28TnL5HPStwNw-pfE84U43JQLbUZECjS.f0Q%29%28%29
 
 Command
 
@@ -328,3 +328,90 @@ Effective PowerShell Item 4: Commenting Out Lines in a Script File
     >> @"
     >> $(get-process)
     >> "@
+
+Effective PowerShell Item 5: Use Set-PSDebug -Strict In Your Scripts – Religiously
+-----------------------------------------------------------------------------------
+
+.. code-block:: html
+
+    # variables should be declared before using (perlのstrictと同じ)
+    Set-PSDebug -Strict
+    # 普段はいらない
+
+Effective PowerShell Item 6: Know What Objects Are Flowing Down the Pipe
+---------------------------------------------------------------------------
+
+powershell's "Pipe" は Linux shell's "Pipe"とほぼ同じです。
+
+formatは同じ
+
+.. code-block:: html
+
+    cmd 1 | | |
+    cmdlets_1 | | |
+    0: stdin
+    1:stdout
+    2:stderr
+    Can use ">" or "<" to redirect output   2>&1
+
+違い点
+
+.. code-block:: html
+
+    Linux shell's pipe      : data is in string, text only  -> data does not change through pipe
+    powershell 's pipe      : data is .net object           -> data sometimes change through pipe
+    ####例
+    get-item * | where {$_.PSIsContainer} | get-member
+    # TypeName: System.IO.DirectoryInfo
+    get-item * | where {$_.PSIsContainer} | push-location -passthru  | get-member
+    # TypeName: System.management.Automation.Path
+    # MEMO
+    # get-member　  -> check object property
+
+Effective PowerShell Item 7: Understanding “Output”
+-----------------------------------------------------
+
+Output is always a .NET object
+
+To check output use "get-member"
+
+.. code-block:: html
+
+    get-process powershell | get-member
+    # or
+    $proc = get-process powershell
+    $proc.getType()
+    $proc.gettype().fullname
+    ##############################################################
+    Direct to Host output via "Write-Host" & Out-Host
+    Debug output via "Write-Debug" or "-Debug" on a cmdlet
+    Warning output via "Write-Warning"
+    Verbose output via many cmdlets that output extra information to the host when "-Verbose" is specified
+    EXE stdout or stderr output
+
+Effective PowerShell Item 8: Output Cardinality – Scalars, Collections and Empty Sets
+------------------------------------------------------------------------------------------------
+
+https://rkeithhill.wordpress.com/2007/09/24/effective-powershell-item-8-output-cardinality-scalars-collections-and-empty-sets-oh-my/
+
+Collection in powershell
+-> ignore
+
+Effective PowerShell Item 9: Regular Expressions – One of the Power Tools in PowerShell
+-----------------------------------------------------------------------------------------
+
+.. code-block:: html
+
+    # PowerShell uses this regular expression engine in a number of scenarios:
+    -match operator
+    -notmatch operator
+    Select-String -Pattern parameter
+    #
+    help about=reg*
+
+perlのように書けないらしい
+
+のこり７つの章は省略
+
+powershellはmatlabのshellと似ています。
+従来、shellは簡単な操作だけに使われるので、効率、行列などに関する情報は読まない
