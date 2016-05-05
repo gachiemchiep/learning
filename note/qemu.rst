@@ -19,4 +19,7 @@ create image
     qemu -m 256 -hda centOS.img -cdrom CentOS-7-x86_64-Minimal-1511.iso -kernel-kqemu
 
 
-TODO : build yocto image and testing with QEMU
+test image
+
+    runqemu qemux86 tmp/deploy/images/qemux86/core-image-minimal-qemux86.ext4
+
