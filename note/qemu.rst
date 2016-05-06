@@ -21,5 +21,8 @@ create image
 
 test image
 
-    runqemu qemux86 tmp/deploy/images/qemux86/core-image-minimal-qemux86.ext4
+.. code-block:: html
+
+    # fastest
+    runqemu qemux86 tmp/deploy/images/qemux86/core-image-minimal-qemux86.ext4 nographic
 
