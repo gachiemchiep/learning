@@ -318,6 +318,8 @@ Advanced topics
 
 working with gpio and raspberry pi
 
+https://www.yoctoproject.org/tools-resources/presentations/devday-na-2015-advanced-lab
+
 TODO : Compile, upload, update directly to raspberry pi using uboot and ethernet
         working with gpio  ->  LED, sensors, etc
 
