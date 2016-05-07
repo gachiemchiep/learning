@@ -328,3 +328,8 @@ Usefull Link
 ===========
 
 https://www.yoctoproject.org/sites/default/files/ypdd-mar2015-intro-lab.pdf
+https://www.yoctoproject.org/tools-resources/presentations/devday-na-2015-advanced-lab
+
+
+https://www.yoctoproject.org/sites/default/files/ypdd-2016.04-san_diego_1.pdf
+https://www.yoctoproject.org/tools-resources/presentations/yp-devday-na-2016-advanced
