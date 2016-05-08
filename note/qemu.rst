@@ -63,13 +63,46 @@ update-grub
 /var/lib/libvirt/images
 
 
-TODO : http://nairobi-embedded.org/qemu_serial_port_system_console.html
+.. code-block:: html
 
-make qemu client IO to server's console
+    -nographic      disable graphical output and redirect serial I/Os to console
+    -curses         use a curses/ncurses interface instead of SDL
+    -no-frame       open SDL window without a frame and window decorations
+    -alt-grab       use Ctrl-Alt-Shift to grab mouse (instead of Ctrl-Alt)
+    -ctrl-grab      use Right-Ctrl to grab mouse (instead of Ctrl-Alt)
+    -no-quit        disable SDL window close capability
+    -sdl            enable SDL
+
+By default, qemu will create a pop up window.Moving between windows is very annoy.
+Using QEMU on console  = "boot by serialConsole" + "disable QEMU's graphical output"
+-> very convinient
+
+.. code-block:: html
+
+    # enable booting by serialConsole
+    # https://help.ubuntu.com/community/SerialConsoleHowto
+    ############################################################
+    #### 1. create /etc/init/ttyS0.conf
+    start on stopped rc RUNLEVEL=[12345]
+    stop on runlevel [!12345]
+    respawn
+    exec /sbin/getty -L 115200 ttyS0 vt102
+    # then
+    sudo start ttyS0
+    #### 2. edit /etc/default/drub
+    GRUB_CMDLINE_LINUX="console=tty0 console=ttyS0,115200n8"
+    GRUB_TERMINAL=serial
+    GRUB_SERIAL_COMMAND="serial --speed=115200 --unit=0 --word=8 --parity=no --stop=1"
+    # then
+    update-grub
+
+Setup network: -> it is more complex than i thought -> TODO : do it later
 
 Setup NFS (network file system = sharing)
 
 .. code-block:: html
+
+    apt-get install ssh
 
     #### summary ####
     # NFS server is on working machine
