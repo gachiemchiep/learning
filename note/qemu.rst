@@ -126,5 +126,60 @@ Setup NFS (network file system = sharing)
 
 
 
+lshw -class network
+
+
+route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.150.1   0.0.0.0         UG    0      0        0 eth0
+192.168.122.0   0.0.0.0         255.255.255.0   U     0      0        0 virbr0
+192.168.150.0   0.0.0.0         255.255.255.0   U     1      0        0 eth0
+
+
+User Networking (SLIRP)
+
+-> this is not the "normal" one
+
+shit, without networking basic knowledge fooling around is waste of time
+Save until you know wtf is SLIRP and what is the "normal" one (the virtual networking standard)
+which VM, Virtual Box are using
+
+
+Qemu can output to serial0 (/dev/ttyS0 on guest, but /dev/tty on host).
+ This makes it possible to run guests via SSH, without graphical desktop at all,
+  not on server and not on client. But guests must be modified to make them compatible with this feature.
+  Windows guests won't run with this option.
+
+Huhm, interesting. virtualbox can output everything to serial too
+https://www.virtualbox.org/wiki/Serial_redirect
+
+-> theoritically, virtualbox does have a nographic option too
+
+In case of virtualbox :  -> i give up
+
+    # set up virtual machine
+    Allow virtual to use Serialport
+    Settings -> Serial Ports -> check "Enable Serial Port"
+                              Path/Address = /dev/ttyS0
+
+    # add VBox user to "dialout" group
+    sudo usermod -a -G dialout vboxusers
+    sudo usermod -a -G  vboxusers gachiemchiep
+
+    # start without GUI
+    VBoxManage startvm "ubuntu 12.04" --type headless
+
+    # start minicom and connect to serial port
+
+    -> it does not show anything -> fuck
+
+
+
+
+
+
+
+
 
 
