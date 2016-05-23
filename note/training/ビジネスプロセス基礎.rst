@@ -1,0 +1,20 @@
+ビジネスプロセス基礎のまとめ
+==========================
+
+ソリューションビジネス　：　sử dụng ICT, ... để giải quyết vấn đề của khách hàng.
+
+Company's solution business = 4 process (PSDM + relation) = 16 steps
+    -> なぜ　：　役割と責任が明確　+　経験がない人でも参加可能
+
+ICTビジネス環境の変化
+    コスト削減　ー＞　収益拡大
+
+ブジネスプロセス　：　PSDM + relation
+
+PSDM = promotion + selling + delivery + mainternance　+ relation
+     案件発掘　　　　商談推進   構築納品    運用保守
+
+Keywords
+---------
+
+JQA : 日本経営品質賞

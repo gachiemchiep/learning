@@ -176,9 +176,43 @@ In case of virtualbox :  -> i give up
 
 
 
+Let QEMU mount host's dir directtely -> do not need to use NFS
+https://nixos.org/wiki/QEMU_guest_with_networking_and_virtfs
+
+https://www.suse.com/documentation/sles11/book_kvm/data/kvm_qemu_virtfs.html -> this one
+
+VirtFS : virtual filesystem
+
+-virtfs local,path=path,mount_tag=tag,security_model=[mapped-xattr|mapped-file|passthrough|none]
+        [,writeout=immediate][,readonly][,socket=socket|sock_fd=sock_fd]
 
 
+qemu-system-i386 -hda ubuntu-desktop-12.04.img -redir tcp:2222::22 -nographic
 
+ssh -p 2222 root@192.168.0.101
+192.168.0.101  is the IP of the host)
+mount 192.168.0.101:/mnt/nfs /mnt/nfs
+
+
+fk this shit,
+
+
+Setup virtualbox sharing folder
+
+.. code-block:: html
+
+    Make Virtual machine
+    # start the VM
+    Devices > Insert Guest Additions CD image...
+    sudo mount /dev/cdrom /media/cdrom
+    sudo apt-get install make gcc linux-headers-$(uname -r)
+    sudo /media/cdrom/VBoxLinuxAdditions.run
+    # from VirtualBox's Setting set sharing dir as kernel_modules_host
+    # set network as bride adapter
+    # static IP will appear -> can ssh and do other
+    # then mount
+    mount -t vboxsf kernel_modules_host workspace/
+    # DO NOT use NFS -> too much complex
 
 
 

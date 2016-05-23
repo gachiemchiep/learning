@@ -59,19 +59,71 @@ compile後、"test.ko"のmoduleを取得します。
     rmmod test.ko
     ** check **
 
-Allow printk message to be shown on console
+How to see the log
+
+from /var/log/dmesg or /var/log/kernel
 
 .. code-block:: html
 
-    ##### kernel's module output is collected by syslog
-    ##### how to display kernel's module output on console
-    ##
-    # see syslog -> use dmeg and grep
-    # boot at full terminal (ctrl+alt+f1)
-    ## -> very annoy and time consuming
-    # use virtual machine with sharing directory
-    ## -> fast, reliable, safe, do not touch working machine kernel
-    ## -> see qemu.rst for more detail about setting up qemu machine and nfs
+    insmod hello-5.ko
+    root@ubuntu-16-sv-vm:/home/gachiemchiep/workspace# dmesg | tail -n 10
+    [  822.227805] Hello, world 5
+                   =============
+    [  822.227808] myshort is a short integer: 1
+    [  822.227808] myint is an integer: 420
+    [  822.227809] mylong is a long integer: 9999
+    [  822.227810] mystring is a string: blah
+    [  822.227810] myintArray[0] = -1
+    [  822.227811] myintArray[1] = -1
+    [  822.227812] got 0 arguments for myintArray.
+
+    rmmod hello_5
+    root@ubuntu-16-sv-vm:/home/gachiemchiep/workspace# dmesg | tail -n 10
+    [  822.227805] Hello, world 5
+                   =============
+    [  822.227808] myshort is a short integer: 1
+    [  822.227808] myint is an integer: 420
+    [  822.227809] mylong is a long integer: 9999
+    [  822.227810] mystring is a string: blah
+    [  822.227810] myintArray[0] = -1
+    [  822.227811] myintArray[1] = -1
+    [  822.227812] got 0 arguments for myintArray.
+    [  845.651201] Goodbye, world 5
+
+    # HINT
+    # use -F options of tail to show the log
+    tail -F  /var/log/kern.log
+
+there is a number of cases in which you may want to load your module into a precompiled running kernel.
+This case = machine can not be rebooted, kernel is running, kernel which is compiled in the past,
+kernel of common linux distribution
+
+The most common errors:  "version strings" of "current running kernel" and "compiled module" is different.
+-> kernel will refuse to load new module
+
+Solution : compile it with the old source and setting
+
+.. code-block:: html
+
+    # get the kernel source code
+    # https://wiki.ubuntu.com/Kernel/Dev/KernelGitGuide
+    # https://wiki.ubuntu.com/Kernel/BuildYourOwnKernel
+    git clone git://kernel.ubuntu.com/ubuntu/ubuntu-xenial.git
+    # copy the config and Makefile of precompied kernel into new kernel source
+    cp /boot/config-`uname -r` /usr/src/linux-`uname -r`/.config.
+    cp /lib/modules/`uname -r`/build/Makefile /usr/src/linux-`uname -r`
+    # then make
+
+TODO : read w1 driver
+/home/gachiemchiep/workspace/kernel/linux-2.6.39/drivers/w1
+
+start working env
+
+    VBoxManage startvm ubuntu-sv-16.04 --type headless
+    ssh gachiemchiep@192.168.150.64
+
+/lib/modules/4.2.0-27-generic/build/include/linux/fs.h
+
 
 Exampleの詳細
 ----------------
