@@ -8,7 +8,10 @@ project management's standard : PMBOK　: project management body of knowledge
                             日本の　：　ISO 21500
 日程計画　：　PERT
 PDCA
-WBS
+WBS     : work breakdown structure
+
+ダミー作業  ：　作業を発生しない
+ガントチャート
 
 概要
 -----
@@ -24,3 +27,59 @@ PMBOKによるProject managementは以下の10つに分けられる
     プロジェクト品質マネジメント
     プロジェクト調達マネジメント
     プロジェクトコミュニケーションマネジメント
+
+プロジェクトスコープマネジメント
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+スコープ　：　活動範囲
+WBS     ：　Work Breakdown Structure
+
+プロジェクトタイムマネジメント
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PERT : program evaluation and review technique
+
+Arrow diagram :
+
+最早結合時刻と最遅結合遅刻
+
+一番長くかかった経路の作業時間を、最早結合点時刻の値
+
+
+1/1 = 最早結合点時刻/最遅結合点時刻
+
+最遅結合点時刻　: tim 最遅結合点時刻 cua diem cuoi cung
+  sau do tinh nguoc ve truoc theo cong thuc
+        最遅結合時刻　＝　次の最早結合点時刻　ー　作業時間
+
+最早結合点時刻 : cong cac 作業時間 lai
+
+所要期間　＝　最遅結合点時刻 cua diem cuoi cung
+
+         1/1       8/8
+〇 -----> 〇 -----> 〇
+      1  　＼   7    ^
+           ＼ 2       \ 2
+            v          \
+            〇 -------> 〇
+            3/3   1      4/6
+
+ガントチャート
+
+EVM　：　Earned Value Management
+
+プロジェクトコストマネジメント
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+予算　ー＞　projectを完了
+
+人件費　ー＞　工数で経産
+
+トップダウン法
+    -＞　類推見積法
+
+ボトムアップ法
+    -＞　標準タスク法
+
+プログラムステップ法
+ファンクションポイント（FP）法　
