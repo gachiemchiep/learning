@@ -1,0 +1,36 @@
+システム戦略
+    情報システム戦略
+    業務プロセス
+    ソリューションビジネス
+    システム活用促進、評価
+システム企画
+    システム化計画
+    要件定義
+    調達計画、実施
+
+
+システム戦略
+    情報システム戦略
+        業務モデルから立てる情報システム戦略
+        システム化計画はシステムの予想図
+            全体システム化計画
+            情報化投資計画
+            システム化計画
+        業務システムの種類
+    業務プロセス
+    ソリューションビジネス
+    システム活用促進、評価
+システム企画
+    システム化計画
+    要件定義
+    調達計画、実施
+
+keywords
+==============
+
+ERP : Enterprise Resource Planning
+POS : Point Of Sales system
+CRM : Customer Relationship Management
+SFA : Sales Force Automation
+FA : Factory Automation
+CIM : Computer Intergrated Manufacturing

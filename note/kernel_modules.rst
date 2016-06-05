@@ -121,6 +121,10 @@ start working env
 
     VBoxManage startvm ubuntu-sv-16.04 --type headless
     ssh gachiemchiep@192.168.150.64
+    sudo mount -t nfs -o proto=tcp,port=2049 192.168.150.40:/export/workspace /home/gachiemchiep/workspace
+    # /etc/fstab
+    192.168.150.40:/   /export/workspace   /home/gachiemchiep/workspace    auto  0  0
+
 
 /lib/modules/4.2.0-27-generic/build/include/linux/fs.h
 
