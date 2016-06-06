@@ -1,6 +1,6 @@
 TODO
 
-情報セキュリティ
+14. 情報セキュリティ
 =================
 
 - 情報セキュリティ　
@@ -58,5 +58,46 @@ IP Spoofing
 改ざんを見破るメッセージ認証
 -------------------------
 
+MAC: Message Authentication Code
+
+    送信者：messageを秘密鍵で　暗号化　-＞　message認証符号　-＞　送信
+        message + message認証符号　を　送信
+    受信者：
+        受信した　message から　秘密鍵で　message認証符号を作成
+        生成した　message認証符号　と　受信した　message認証符号を比較
+
+本人確認のためのディジタ署名
+-------------------------
+
+送信者：　データ　+　電子署名　-＞　送信
+    データ　-＞　ハッシュ化　-＞　メッセージダイジェスト　－＞
+        送信者の秘密鍵で暗号化　－＞　電子署名
+
+受信者： データ　+　電子署名　-＞　受信
+    データ　-＞　ハッシュ化　-＞　メッセージダイジェスト
+    電子署名　-> 送信者の公開鍵で復号化 -> メッセージダイジェスト
+    メッセージダイジェスト と　メッセージダイジェスト　を比較
+
+CA: Certificate Authority -> 送信者の公開鍵を確認
+
+PKIはセキュリティ確保の基盤
+--------------------------
+
+PKI: Public Key Infrastructure
+
+CA: Certificate Authority
+    ITU-T勧告X.509
+
+CRL: Certificate Revocation List
+
+OCSP: Online Certificate Status protocol
+
+GPKI: Government Public Key Infrastructure
+
+BCA: Bridge CA
+
+ApplicationからのPKI利用
+    S/MIME、HTTPS
 
 
+TODO
