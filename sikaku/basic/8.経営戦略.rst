@@ -32,7 +32,7 @@
     TOB(Take over bid), MBO(Management BuyOut)
 
 経営分析の手法
-=============
+--------------------
 
 ポートフォリオ分析
     - ポートフォリオとは　：　複数の要素を　二つの項目で評価　-＞　各要素の占めるポジションから
@@ -52,10 +52,10 @@ SWOT分析
     -　バリューエンジニアリング  ：　value engineering
 
 マーケティング
-==============
+-----------------
 
 市場原理をつかむメーケティング理論
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - マーメティング、マーメティングリサーチ（市場調査）
     重要  ：　顧客の４C 戦略の４P
@@ -86,5 +86,104 @@ SWOT分析
     + デルファイ法
 
 ビジネス戦略と技術開発戦略
+---------------------------
 
-TODO
+経営戦略と具現化するビジネス戦略：　ビジネス環境分析しながら、ビジネス戦略を定める
+    手法
+        + BSC（Balanced Score card）
+        CSF（Critical Sucess Factors）
+
+経営資源を活する経営管理システム
+    経営管理　：　企業の経営資源（人、もの、金など）　+　経営行動　を管理
+    経営管理の方法
+        + KM（ナレッジマネジメント）
+        + ERP(Enterprise Resource Planning)：
+        SFA（Sales Force Automation）
+        CRM（Customer Relationship Management）
+        SCM（Supply Chain Management）
+
+- 開発競争に負けない技術開発戦略
+    MOT（Management of technology：技術経営）：技術の可能性を実極めて次行に結びつけ、経営価値を生み出す
+
+技術開発計画で有効活用する開発投資
+    開発工程を効率化
+        Concurrent Engineering
+    技術開発の未来象を提示
+        技術ロードマップ　：将来における技術分野の進展を予測、時系列で表示
+    プロダクトイノベーション
+    パイロット生産
+        量産化を行う前に、少量産（試験用）を作成
+
+ビジネスシステムとエンジニアリングシステム
+---------------------------------------
+
+業務を支えるビジネスシステム
+    社内業務私怨システム
+        財務、会計　+人事、給与　+ 営業支援 + グループウェア + Web会議 + ワークフロー
+    基幹業務支援システム
+        生産業務、物流業務、販売業務、業類別業務、など
+        POS（Point of Sales）
+    + XBRL:extensible Business Reporting Language
+    + スマートグリッド：　ネットワークを介して、効率的な電力供給
+    グループウェア：ネットワークを介して、共同作業（メール、スケジュール、など）を総合
+
+    行政システム、公共情報システム
+        ？？？
+
+製造を支えるエンジニアリングシステム　：　上から下へ
+    CIM（Computer Integrated Manufacturing）
+    MIS（経営戦略）（Management Information System）
+    MRP（生産計画）（Material Requirements Planning） + CAE（研究開発）（Computer aided engineering）  ：
+    CAD（製品設計）（Computer Aided Design）
+    CAPP（工程計画）（Computer Aided Process Planning） + CAP（日程計画）（Computer Aided Planning）
+    CAM（生産制御）
+    自動搬入／加工／組立／検査／出荷
+    FA
+
+生産の自動制御
+    ライン生産方式とセル生産方式
+        ライン生産方式 ：製品の完成までの工程を連続手に作って行く
+        セル生産方式   ：一つの製品を最終工程まで作り上げる
+    ロット生産方式と個別生産方式
+        ロット生産方式 ：同じ製品をまとめて大量に作る
+        個別生産方式  ：顧客からの注文に応じて作る
+    JIT生産方程式    ：必要なものを必要なときに必要な量だけを生産
+
+e-ビジネス
+-----------
+
+ネット上で取引を行うEC
+    EC(ElectronicCommerce)：以下のシステムを利用
+        電子受け発注システム
+            電子調達システム
+            電子入札
+            オンラインショッピング
+            EFT（電子資金移動）
+        電子決算システム
+            インターネットバンキング
+            ICカード、RFID
+        e-ビジネスの進め方
+            分類
+                B2B, B2C, B2E, C2C, G2B, G2C, O2O(Online to Offline)
+        e-ビジネスの形態
+            e-マーケットプレイス
+            ネットショップ
+            レコメンデーションシステム
+            アフィリエイト
+
+            + オプトインメール
+
+定型書類の引き取りを標準化するEDI
+    + EDI: Electronic Data Interchange
+        XML-EDI
+        XBRL
+        STEP（Standard for the Exchange of Product）
+
+個人ベースで発信するCGM
+    CGM: Consumer Generated Media
+
+民生機器と産業機器
+-------------------
+
+組み込みシステム、センサー、マイクロコンピュータ、組み込みOS
+産業用ロボット、ファームウェア、Ubiquitous computing
