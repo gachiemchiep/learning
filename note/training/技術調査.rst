@@ -177,7 +177,84 @@ Deep learning（深層学習）は「機械学習手法」の一つであり、
 
 ここで、深層学習の考え方と流れを把握できるでしょう。
 
+自動車IoT（Connected Car）
+==============================
 
+完全なキーワード：Big data,sensing technology,m2m, v2v,vehicle tracking,...
+
+なぜこの技術が必要：安全性、mobilibity、燃料コスート減少
+
+自動車IoTはどんな形になりますか？
+    １）自動車はインタネットと接続
+    ２）自動車は自動車と対話できる
+
+詳細：
+    １）vehicular-to-infrastructure
+    ２）vehicular-to-vehicular
+
+そんな形になるため、どんな技術が必要？
+    GSM、LTE、WLAN：ETSIのITS-G5、WLANp
+    V2V: vehicular to vehicular
+
+Standard：以下の国際基準があります。アメリカは以下の基準を広げたいです。
+    ITS:　Intelligent Transportation Systems
+
+市場は自動車の市場だけではない
+    自動車はインフラは一緒に進歩します
+
+以下のstudyにより、市場の大きさと成長率は
+    2016: 40.3 billion Euro
+    2021: 122.6 billion Euro
+
+http://www.strategyand.pwc.com/reports/connected-car-2015-study
+
+自動車IoT用アプリケーションは７つの分野に分けられます。
+
+.. code-block:: html
+
+    Autonomous Driving          自動運転
+    Safety                      運転中の安全保持
+    Entertainment
+    Well-being                  運転手の健康状態を監視、（疲れるなどを認知）
+    Vehicle Management          使いやすさ（音声、smartphoneなどで自動車を制御）
+    Mobility Management         道路の案内（渋滞を避けられる）
+    Home integration            Smart houseと連携
+
+自動車を制御するため、SmartPhone、音声などを利用します。
+しかし、Applicationを開発用のDevelopment platformは多くがあります。
+市場の大分のshareを占められるPlatformはまだがありません。
+
+.. code-block:: html
+
+    会社名        |     Platform  | Service
+    Google       |    Android    | Android Auto
+    Apple        |    IoS        | CarPlay
+    BlackBerry   |    BlackBerry | QNX
+                    Web          | WebLink
+
+アプリケーション開発のアプローチ
+    自動車自体   +　自動車の回りのインフラ
+
+    実際の事例：
+        http://newsroom.toyota.co.jp/en/detail/4228471/
+            交差点にカメラを設置します
+            カメラは人の移動情報を収集します
+            自動車はカメラから情報をもらいます
+            打ち込む、渋滞を避けられます
+        自動車だけ
+            EyeSight
+
+自律型システム
+===============
+
+アンビエント
+================
+
+デバイスメッシュ
+=================
+
+VR
+====
 
 
 
