@@ -244,16 +244,39 @@ http://www.strategyand.pwc.com/reports/connected-car-2015-study
         自動車だけ
             EyeSight
 
-自律型システム
-===============
+自律型システム（Autonomic Computing）
+=======================================
 
-アンビエント
+autonomic computing encompasses the study of systems that are capable of autonomously achieving desired behaviors
+
+なぜ必要
+    将来に、システムの規模が巨大になります。管理時間とコストを減少するため
+
+They share four chracteristic
+    Self-Configuring        Adap to dynamically changing environments
+    Self-Healing            Discover, diagnose and act to prevent disruption
+    Self-Optimizing         Tune resources and balance workloads to maximize use of IT resources
+    Self-Protecting         Anticipate, detec, identify and protec against attack
+
+Autonomic computing と　人工知能の関係
+    Autonomic System = "Monitor -> Analyze -> Plan -> Execute" loop
+    人工知能 can be used in 「Analyze and plan」 stages
+
+事例
+    Peer-to-peer system : torrent, skype, hadoop, facebook, ....
+
+参考リンク
+    http://www.sei.cmu.edu/reports/06tn006.pdf  : Survey、時間があれば読み、まとめ TODO
+    http://www.slideshare.net/Annie05/autonomic-computing-presentation
+    https://sciencenode.org/feature/what-autonomic-computing.php
+
+アンビエント  TODO
 ================
 
-デバイスメッシュ
+デバイスメッシュ    TODO
 =================
 
-VR
+VR  TODO
 ====
 
 
