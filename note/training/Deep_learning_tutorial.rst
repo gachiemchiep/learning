@@ -1,4 +1,10 @@
-機械学習: Machine learningは以下の二つに分けられる
+Deep learningの纏め
+======================
+
+// すでに、知ったものを纏め
+
+機械学習について
+--------------
 
 Supervised Learning         教師あり学習
     入力データ：（x、y）　＝　（データ、ラベル）
@@ -10,12 +16,9 @@ Unsupervised learning       教師なし学習
     タスク:Clustering,dimensionality reduction, featurelearning, generative models, etc.
 
 タスクに対して、一番重要なことは「特徴、features」です。
-
 機械学習の中に、以下の二つの概念があります。
-
-
-shallow learningの特徴：SIFT,など
-deep learning
+    shallow learningの特徴：SIFT,など
+    deep learning
 
     Deep learningの一つのstage
         Convolution -> normalize -> pooling
@@ -28,12 +31,20 @@ Deep learningの場合、多くのstageがあります：
 SIFTは一つのstageしかありません。
     -> shallow learning
 
-Deep learningは機械学習の一つのツールです。
-「Supervised Learning」と　「Unsupervised learning」
-の両方に対応できます。
-学習方法は「foward propagation」 + 「back propagation」による行います。
-種類として、CNN,RNN,LSTMなどがあります。
-
-「Supervised Learning」の実装例: AlexNet
+Deep learningについて
+----------------------
 
 
+
+
+CUDA,並列プログラミングについて
+--------------------------------
+https://nvidia.qwiklab.com/focuses/37
+account : gachiemchiep@gmail.com
+password: matkhauthuongdung
+
+ubuntu-drivers devices
+
+Installが必要ない　-＞　Webで動ける　－＞　あまり、効果がないね
+
+Caltechの" GPU Programming "コースを受けましょう
