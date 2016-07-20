@@ -47,10 +47,14 @@ computer architecture course
 
 compare between arm and x86
     http://stackoverflow.com/questions/14794460/how-does-the-arm-architecture-differ-from-x86
+    http://stackoverflow.com/questions/2679882/why-is-x86-ugly-aka-why-is-x86-considered-inferior-when-compared-to-others
     https://arxiv.org/pdf/1101.5364.pdf
 
 arm business view
     http://diamond.jp/articles/-/95972
+
+arm programming : maybe in 10 years later, i will use this document
+    http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.den0013d/index.html
 
 
 
