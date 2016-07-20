@@ -1,0 +1,15 @@
+
+http://www.macrotrends.net/         :オイル、株のchart 100年
+
+***************
+学習したい時に、MITの公開サイトから選択可能
+    http://ocw.mit.edu/index.htm
+
+electronics
+    http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/
+
+Computer vision
+    http://cs231n.stanford.edu/slides/
+
+computer architecture course
+    https://www.cis.upenn.edu/~milom/cis501-Fall05/

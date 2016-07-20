@@ -24,7 +24,6 @@ kernel source
 
 .. code-block:: html
 
-    yum install kernel-devel
     sudo apt-get install fakeroot build-essential
     sudo apt-get install git-core libncurses5 libncurses5-dev libelf-dev asciidoc binutils-dev
 

@@ -1,8 +1,16 @@
-組み込み
+電子回路
 =========
 
 電子工学
     http://monoist.atmarkit.co.jp/mn/series/1799/
+
+わかりやすい
+    http://www.kairo-nyumon.com/index.html
+
+大学の従業
+        http://ps.eei.eng.osaka-u.ac.jp/funaki/notes/class/h22/H22.html
+
+Network :   http://www.infraexpert.com/
 
 
 Serial Terminal Basics
