@@ -11,3 +11,5 @@ IOT向けデータ通信SIM
 
 IBM者の物体認識API
     https://visual-recognition-demo.mybluemix.net/
+
+特集なスピーカ：　入力は日本語、出力は英語

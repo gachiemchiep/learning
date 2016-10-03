@@ -1,0 +1,11 @@
+概要
+=========
+
+以下のリンクからデジタル回路について勉強した
+    デジタル回路設計
+        http://zakii.la.coocan.jp/digital/0_contents.htm
+    デジタル信号処理
+        http://zakii.la.coocan.jp/signal/0_contents.htm
+
+Other, not read yet
+    http://www.elect.chuo-u.ac.jp/tsuki/cgi-bin/digital.cgi

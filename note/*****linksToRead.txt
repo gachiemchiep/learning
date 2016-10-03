@@ -4,6 +4,8 @@ http://www.macrotrends.net/         :オイル、株のchart 100年
 ***************
 学習したい時に、MITの公開サイトから選択可能
     http://ocw.mit.edu/index.htm
+    or from
+    https://lagunita.stanford.edu/dashboard
 
 electronics
     http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/
@@ -13,3 +15,12 @@ Computer vision
 
 computer architecture course
     https://www.cis.upenn.edu/~milom/cis501-Fall05/
+
+Network :   http://www.infraexpert.com/
+
+python
+    http://share.sm3.su/writing_idiomatic_python_3.pdf
+
+UML and OOP
+    http://www.itmedia.co.jp/im/articles/0209/21/news001.html
+    http://www.atmarkit.co.jp/ait/subtop/features/dotnet/oop_index.html

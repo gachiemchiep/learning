@@ -1,3 +1,9 @@
+概要
+=======
+
+1. Learn C the hard way
+
+
 Learn C the hard wayについて
 ==============================
 

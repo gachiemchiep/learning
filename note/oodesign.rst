@@ -1,6 +1,8 @@
 Object Oriented Designについて
 ==================================
 
+// TODO
+
 Design pattern,
 http://www.oodesign.com/
 
@@ -40,6 +42,19 @@ Abstract Factory
     the system is or should be configured to work with multiple families of products.
     a family of products is designed to work only all together.
     the creation of a library of products is needed, for which is relevant only the interface, not the implementation, too.
+
+
+
+
+A singleton gives you:
+
+    Global access to an object, and
+    A guarantee that no more than one object of this type can ever be created
+
+Good Situations to use Singletons (not many):
+
+    Logging frameworks
+    Thread recycling pools
 
 
 
