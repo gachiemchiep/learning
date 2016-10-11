@@ -1,7 +1,7 @@
 Object Oriented Designについて
 ==================================
 
-// TODO
+// Memo: this is quite a mess,
 
 Design pattern,
 http://www.oodesign.com/

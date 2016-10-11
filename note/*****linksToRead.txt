@@ -1,7 +1,13 @@
+1. Money
+=====================================================================
 
 http://www.macrotrends.net/         :オイル、株のchart 100年
 
-***************
+https://dangkykinhdoanh.gov.vn/NewsandUpdates/tabid/91/CategoryID/25/language/vi-VN/Default.aspx
+
+2. Knowledge
+======================================================================
+
 学習したい時に、MITの公開サイトから選択可能
     http://ocw.mit.edu/index.htm
     or from
@@ -24,3 +30,16 @@ python
 UML and OOP
     http://www.itmedia.co.jp/im/articles/0209/21/news001.html
     http://www.atmarkit.co.jp/ait/subtop/features/dotnet/oop_index.html
+
+Collection of library, usefull programming stuff
+    How to use
+
+    https://github.com/sindresorhus/awesome
+
+3. Market condition
+=======================================================================
+
+Embedded Marker
+    Present by UMB:     -> Q/Aで組み込み世界の皮を見られる
+    http://webpages.uncc.edu/~jmconrad/ECGR4101-2015-08/Notes/UBM%20Tech%202015%20Presentation%20of%20Embedded%20Markets%20Study%20World%20Day1.pdf
+    -> FreeRTOS is used widely

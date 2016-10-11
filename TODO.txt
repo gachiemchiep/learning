@@ -1,5 +1,23 @@
-Write a sample c++ project
+----------------------------------
+1.  Solve 午後問題 for these
+平成26年春期試験問題 : 午後
+平成26年秋期試験問題 : 午後
 
-with google gtest
+-----------------------------------
 
-asdasasdas
+do not know why, but now i am very good at learning and using new language
+
+2. write your app : after your exam finished
+use image from gallery to generate 8 bits like image
+-> write for ios, using swift
+
+out swift :
+    https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309
+    http://www.learnswift.tips/
+
+2. read and summary
+https://msdn.microsoft.com/en-us/library/dd673617.aspx
+
+3. write a simple management software (with gui and etc)
+4. using google gtest to auto test empMng
+
