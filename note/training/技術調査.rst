@@ -178,7 +178,7 @@ Deep learning（深層学習）は「機械学習手法」の一つであり、
 ここで、深層学習の考え方と流れを把握できるでしょう。
 
 自動車IoT（Connected Car）
-==============================
+------------------------------
 
 完全なキーワード：Big data,sensing technology,m2m, v2v,vehicle tracking,...
 
@@ -245,7 +245,7 @@ http://www.strategyand.pwc.com/reports/connected-car-2015-study
             EyeSight
 
 自律型システム（Autonomic Computing）
-=======================================
+-------------------------------------------
 
 autonomic computing encompasses the study of systems that are capable of autonomously achieving desired behaviors
 
@@ -271,13 +271,27 @@ Autonomic computing と　人工知能の関係
     https://sciencenode.org/feature/what-autonomic-computing.php
 
 アンビエント  TODO
-================
+--------------------------
+
+All the cool keyword can be grouped as follow
+
+User
+User Experient      VR
+Ambient
+Autonomic Computing
+Device Mesh , Connected Car
+Artificial Intelligent
+Device
+
+Ambient : the ultimate goal for future system
+    System is completely hidden from User view
+    System is operated by it self
 
 デバイスメッシュ    TODO
-=================
+-----------------------------
 
 VR  TODO
-====
+-----------------
 
 
 

@@ -36,6 +36,15 @@ Collection of library, usefull programming stuff
 
     https://github.com/sindresorhus/awesome
 
+以下のリンクからデジタル回路について勉強した
+    デジタル回路設計
+        http://zakii.la.coocan.jp/digital/0_contents.htm
+    デジタル信号処理
+        http://zakii.la.coocan.jp/signal/0_contents.htm
+
+Other, not read yet
+    http://www.elect.chuo-u.ac.jp/tsuki/cgi-bin/digital.cgi
+
 3. Market condition
 =======================================================================
 
@@ -43,3 +52,7 @@ Embedded Marker
     Present by UMB:     -> Q/Aで組み込み世界の皮を見られる
     http://webpages.uncc.edu/~jmconrad/ECGR4101-2015-08/Notes/UBM%20Tech%202015%20Presentation%20of%20Embedded%20Markets%20Study%20World%20Day1.pdf
     -> FreeRTOS is used widely
+
+
+4. Useless stuff
+=========================

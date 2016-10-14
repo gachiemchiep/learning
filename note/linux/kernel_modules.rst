@@ -1,6 +1,7 @@
 The linux kernel module programming
 ======================================
 
+TODO Move back when have time
 http://www.tldp.org/LDP/lkmpg/2.6/html/index.html
 
 

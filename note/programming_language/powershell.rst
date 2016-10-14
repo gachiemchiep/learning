@@ -1,3 +1,14 @@
+PowerShell
+============
+
+Keywords
+------------
+
+Linux shell-liked for Window
+
+Details
+---------
+
 Type
     help about
 
@@ -237,8 +248,8 @@ read later
 
 https://msdn.microsoft.com/en-us/powershell/scripting/topic/working-with-objects
 
-後で書き直すべき
-================
+TODO 後で書き直すべき
+------------------
 
 about policy
     https://technet.microsoft.com/en-us/library/347708dc-1515-4d74-978b-8334603472e6
@@ -251,12 +262,12 @@ Microsoftの資料は本当に悪い、無駄な部分は多くので初心者�
 
 
 Effective powershell
-=====================
+---------------------------
 
 blog link: https://rkeithhill.wordpress.com/2007/09/03/effective-powershell-item-1-the-four-cmdlets-that-are-the-keys-to-finding-your-way-around-powershell/
 
 Effective PowerShell Item 1: The Four Cmdlets That are the Keys to Finding Your Way Around PowerShell
---------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 command = cmdlets
 in case of popular command (ex: pwd, cd,...) powershell use "alias" to link real-cmdlets
@@ -276,7 +287,7 @@ cmdlets is written as "verb-noun" format.
     Get-PSDrive
 
 Effective PowerShell Item 2: Use the Objects Luke. Use the Objects!
----------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In most shells, information = string
 in powershell, information = .net object
@@ -302,7 +313,7 @@ TODO: 将来、powershellを利用する機会があればもう一度読む
 -> 今は利用しないので、old-way(information = string)のアプローチを使う
 
 Effective PowerShell Item 3: Know Your Output Formatters
----------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html
 
@@ -316,7 +327,7 @@ Effective PowerShell Item 3: Know Your Output Formatters
     (Get-Process)[0] | Format-List *
 
 Effective PowerShell Item 4: Commenting Out Lines in a Script File
--------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html
 
@@ -330,7 +341,7 @@ Effective PowerShell Item 4: Commenting Out Lines in a Script File
     >> "@
 
 Effective PowerShell Item 5: Use Set-PSDebug -Strict In Your Scripts – Religiously
------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html
 
@@ -339,7 +350,7 @@ Effective PowerShell Item 5: Use Set-PSDebug -Strict In Your Scripts – Religio
     # 普段はいらない
 
 Effective PowerShell Item 6: Know What Objects Are Flowing Down the Pipe
----------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 powershell's "Pipe" は Linux shell's "Pipe"とほぼ同じです。
 
@@ -369,7 +380,7 @@ formatは同じ
     # get-member　  -> check object property
 
 Effective PowerShell Item 7: Understanding “Output”
------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Output is always a .NET object
 
@@ -390,7 +401,7 @@ To check output use "get-member"
     EXE stdout or stderr output
 
 Effective PowerShell Item 8: Output Cardinality – Scalars, Collections and Empty Sets
-------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 https://rkeithhill.wordpress.com/2007/09/24/effective-powershell-item-8-output-cardinality-scalars-collections-and-empty-sets-oh-my/
 
@@ -398,7 +409,7 @@ Collection in powershell
 -> ignore
 
 Effective PowerShell Item 9: Regular Expressions – One of the Power Tools in PowerShell
------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: html
 

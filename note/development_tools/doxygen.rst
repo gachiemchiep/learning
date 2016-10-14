@@ -8,10 +8,6 @@ http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html
 2. use doxygen to create uml graph
 3. use doxygen to create doc
 
-
-Doxygen
-============================
-
 http://www.yolinux.com/TUTORIALS/LinuxTutorialC++CodingStyle.html#DOXYGEN
 
 Doxygen         = Automated Documentation Generation

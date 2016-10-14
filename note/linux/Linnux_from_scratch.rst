@@ -1,3 +1,20 @@
+Linux from scratch
+======================
+
+Keywords
+----------
+
+Cross-compiling
+
+
+Brieft
+----------
+
+How linux is built ? How each linux distribution is different from each other ?
+This can answer all.
+
+Detail
+----------
 Link
 
 .. code-block:: html
@@ -60,5 +77,6 @@ gcc
     --disable-libvtv                               \
     --disable-libstdcxx                            \
     --enable-languages=c,c++
+
 
 stuck here

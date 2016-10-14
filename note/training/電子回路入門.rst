@@ -1,5 +1,8 @@
+電子回路の纏め
+==================
+
 概要
-=====
+---------
 
 以下のリンクをよみ、まとめ
 http://www.kairo-nyumon.com/index.html
@@ -10,7 +13,7 @@ http://www.kairo-nyumon.com/index.html
         http://ps.eei.eng.osaka-u.ac.jp/funaki/notes/class/h22/H22.html
 
 内容
-======
+-------------
 
 アナログ回路
     電気回路
