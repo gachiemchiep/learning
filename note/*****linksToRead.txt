@@ -56,3 +56,7 @@ Embedded Marker
 
 4. Useless stuff
 =========================
+
+`Graphics Processing Units (GPUs): Architecture and Programming <http://cs.nyu.edu/courses/spring12/CSCI-GA.3033-012/>`_
+
+`Multicore Processors: Architecture & Programming  <http://cs.nyu.edu/courses/spring14/CSCI-GA.3033-015/>`_
