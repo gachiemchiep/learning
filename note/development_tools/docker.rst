@@ -54,9 +54,8 @@ Docker Usefull command
 
 Using docker with openvswitch
 
-.. code-block::
 
-    `install openvswitch on centOS <http://supercomputing.caltech.edu/blog/index.php/2016/05/03/open-vswitch-installation-on-centos-7-2/>`_
-    `Networking with openvswitch <http://www.containertutorials.com/network/ovs_docker.html>`_
+1. `install openvswitch on centOS <http://supercomputing.caltech.edu/blog/index.php/2016/05/03/open-vswitch-installation-on-centos-7-2/>`_
+2. `Networking with openvswitch <http://www.containertutorials.com/network/ovs_docker.html>`_
 
 
