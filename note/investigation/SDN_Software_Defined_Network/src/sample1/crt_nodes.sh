@@ -17,7 +17,10 @@ for count in {1..5}; do
     docker run -dit --net=none --name debian_${count} dev/debian
 
     # use pipework to bind to $BR
-    sudo pipework ${BR} debian_1 173.16.1.$(( count + 1 ))/24
+#    sudo pipework ${BR} debian_${count} 173.16.1.$(( count + 1 ))/24
+
+    # use ovs-docker to bind to $BR
+    ovs-docker add-port ${BR} eth1 debian_${count} --ipaddress=173.16.1.$(( count + 1 ))/24
 
 done
 
