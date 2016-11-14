@@ -25,9 +25,8 @@ for count in {1..5}; do
 done
 
 # add sFlowTrend configuration
-SFLOWUUID=$( sudo ovs-vsctl -- --id=@sflow create sflow agent=${AGENT}  \
-target=\"${COLLECTOR_IP}:${COLLECTOR_PORT}\" header=${HEADER} \
-sampling=${SAMPLING} polling=${POLLING} \
--- set bridge ${BR} sflow=@sflow )
+SFLOWUUID=$( sudo ovs-vsctl -- --id=@sflow create sflow agent=${AGENT_IP} \
+target=\"${COLLECTOR_IP}:${COLLECTOR_PORT}\" header=${HEADER_BYTES} \
+sampling=${SAMPLING_N} polling=${POLLING_SECS} -- set bridge ${BR} sflow=@sflow )
 
 echo "SFLOWUUID=${SFLOWUUID}" >> tmp.txt
