@@ -18,3 +18,5 @@ sudo ovs-ofctl show ${BR}
 
 
 #ovs-appctl fdb/show ${BR}
+# show sflow
+# sudo ovs-vsctl list sflow
