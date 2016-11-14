@@ -20,3 +20,9 @@ sudo ovs-ofctl show ${BR}
 #ovs-appctl fdb/show ${BR}
 # show sflow
 # sudo ovs-vsctl list sflow
+
+
+################ usefull command to debug sFlowTrend
+
+#ovs-vsctl list sflow
+# tcpdump -ni eth1 udp port 6343
