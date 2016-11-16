@@ -30,3 +30,7 @@ target=\"${COLLECTOR_IP}:${COLLECTOR_PORT}\" header=${HEADER_BYTES} \
 sampling=${SAMPLING_N} polling=${POLLING_SECS} -- set bridge ${BR} sflow=@sflow )
 
 echo "SFLOWUUID=${SFLOWUUID}" >> tmp.txt
+
+# add OpenDayLight controller
+# Controller will be ovs-br0 tcp:173.16.12.1:6633”
+ovs-vsctl set-controller $BR tcp:127.0.0.1:6653

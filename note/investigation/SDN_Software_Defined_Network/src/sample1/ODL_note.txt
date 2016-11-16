@@ -1,0 +1,21 @@
+Add features to karaf
+------------------------
+
+.. code-block:: html
+
+    # start karaf
+    ./distribution-karaf-0.3.0-Lithium/bin/karaf
+
+    # add feature
+    # feature:install odl-dlux-all odl-restconf-all odl-l2switch-switch
+
+    # restart karaf
+    shutdown -f
+
+    # start karaf again
+    # display the log using log:tail
+    # wait ultill log:tail does not refresh
+    # took around  5 minutes
+
+    # clean features using
+    # bin/karaf clean
