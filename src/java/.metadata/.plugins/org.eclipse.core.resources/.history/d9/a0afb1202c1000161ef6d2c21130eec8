@@ -1,0 +1,12 @@
+
+public class StartUp {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SavingsAccount suzuki = new SavingsAccount("Suzuki", 1000, 5000);
+	}
+
+}

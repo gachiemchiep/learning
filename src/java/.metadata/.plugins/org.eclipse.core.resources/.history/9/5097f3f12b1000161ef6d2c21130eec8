@@ -1,0 +1,16 @@
+
+class SavingsAccount extends Account {
+	private int timeBalance;
+	
+	public SavingsAccount(String name_, int balance_, int timeBalance_) {
+		super(name_, balance_);
+		this.timeBalance = timeBalance_;	
+	}
+	
+	public void setTimeBalance(int timeBalance_) {
+		this.timeBalance = timeBalance_;
+	}
+	public int getTimeBalance() {
+		return timeBalance;
+	}
+}

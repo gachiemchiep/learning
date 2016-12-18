@@ -1,0 +1,5 @@
+package abstract_class;
+
+abstract class Account {
+
+}

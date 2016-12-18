@@ -1,0 +1,12 @@
+package abstract_class;
+
+class ForeignAccount extends Account {
+	
+	private String type;
+	
+	public ForeignAccount(String name_, int balance_, String type_) {
+		super(name_, balance_);
+		this.type = type_;
+	}
+	
+}

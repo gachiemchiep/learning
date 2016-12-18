@@ -1,0 +1,17 @@
+package abstract_class;
+
+abstract class Account {
+	
+	private String name;
+	private int balance;
+
+	public Account() {
+		
+	}
+	
+	public Account(String name_, int balance_) {
+		this.name = name_;
+		this.balance = balance_;
+	}
+
+}

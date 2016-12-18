@@ -10,7 +10,8 @@ while True:
             if idCount == 5:
                 ipCount = 2
 
-            command = "docker exec debian_%d nping -c1 --icmp  173.16.1.%d/24" % (idCount, ipCount)
+            # command = "docker exec debian_%d nping -c1 --icmp  173.16.1.%d/24" % (idCount, ipCount)
+            command = "docker exec debian_%d ping -c5  173.16.1.%d/24" % (idCount, ipCount)
             print command
             subprocess.call(command, shell=True)
 

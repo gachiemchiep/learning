@@ -26,6 +26,11 @@ So the guests is light weight, fast to boot up and use. But there is security pr
 
 `vmm/hypervisor vs container <http://www.slashroot.in/difference-between-hypervisor-virtualization-and-container-virtualization>`_
 
+ソフトウェアをDeployする際に、DockerのContainerを用いる方法もある。
+メリット：machineの環境に影響しない、早くDeployできる。
+`Bitnami <Bitnami.com>`_
+社はDockerのimageを提供する。
+
 Docker Usage
 ---------------
 
@@ -33,7 +38,7 @@ Docker Usage
 
 `Docker tutorial <http://www.containertutorials.com/index.html>`_
 
-Docker Usefull command
+Docker useful command
 -------------------------
 
 .. code-block::
@@ -52,9 +57,5 @@ Docker Usefull command
     # list on the running container
     docker ps -a -f status=running
 
-Using docker with openvswitch
-
-1. `install openvswitch on centOS <http://supercomputing.caltech.edu/blog/index.php/2016/05/03/open-vswitch-installation-on-centos-7-2/>`_
-2. `Networking with openvswitch <http://www.containertutorials.com/network/ovs_docker.html>`_
 
 

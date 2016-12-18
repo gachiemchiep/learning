@@ -1,0 +1,5 @@
+package abstract_class;
+
+class SavingsAccount extends Account {
+	
+}
