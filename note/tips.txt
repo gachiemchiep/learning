@@ -1,9 +1,0 @@
-cpp file parser using boost
----------------------------
-see src/cpp/boost_spirit.cpp
-
-
-Disable ctrl+alt
----------------------
-
-edit leafpad ~/.config/openbox/lubuntu-rc.xml
