@@ -1,0 +1,119 @@
+MiniNetについて
+===================
+
+目的は３つがある
+
+1)Mininetを用いてcustomizeなネットワークを構築できる。
+2)Wiresharkで仮想ネットワークOpenFlowのpackets流れを監視する。
+3)OpenDayLightに対応できる
+
+Mininetとは
+-------------
+
+MininetはNetwork Emulator Toolである。
+Mininetを用いて，簡単に仮想ネットワークを構築できる。
+OpenFlowをサポートしているので、SDNのController (NOX, POX, OpenDayLight)
+などを利用できる。
+ネットワークのMonitorツールWiresharkも当然利用できる。
+さらに、Wireshark version 2.2からOpenFlowをdefaultにサポートしている。
+MininetでOpenFlowwo用いる仮想ネットワークを生成する際に、
+Wiresharkはpackageの流れをcaptureできる。
+
+流れの詳細
+-----------
+
+Install mininet
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: html
+
+    https://github.com/mininet/mininet
+    # then run
+    tools/install
+
+Install Wireshark 2.2
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: html
+
+    # Remove all old wireshark
+
+    # Add official wireshark
+    sudo add-apt-repository ppa:wireshark-dev/stable
+    sudo apt-get install ppa-purge && sudo ppa-purge ppa:wireshark-dev/stable
+
+    # then setup wireshark for non-root
+    sudo setcap 'CAP_NET_RAW+eip CAP_NET_ADMIN+eip' /usr/bin/dumpcap
+    sudo dpkg-reconfigure wireshark-common
+    sudo gpasswd -a gachiemchiep wireshark
+
+How to use wireshark to capture openflow packets
+
+.. code-block:: html
+
+    # Start wireshark :
+    wireshark &
+    # select interface
+    # Then in the filter : openflow_v1 or openflow_v4
+
+If we have to capture REMOTELY
+
+.. code-block:: html
+
+    # On the remote machine
+    # dump packets using tshark
+    sudo tshark -O openflow_v4 -i eth0 port
+    ssh root@firewall "tshark -O openflow_v4 -i eth0 port" > /tmp/remote
+    # Or
+    # Run tcpdump over ssh on your remote machine and redirect the packets to the named pipe:
+    ssh root@firewall "tcpdump -s 0 -U -n -w - -i eth0 not port 22" > /tmp/remote
+
+    # On the Host
+    mkfifo /tmp/remote
+    Start wireshark from the command line
+    $ wireshark -k -i /tmp/remote
+
+Download OpenDayLight
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: html
+
+    # get the Lithium v4
+     https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/distribution-karaf/0.3.4-Lithium-SR4/distribution-karaf-0.3.4-Lithium-SR4.tar.gz
+    # Run
+    bin/karaf
+    # Add feature
+    feature:install odl-restconf odl-l2switch-switch odl-mdsal-appidocs odl-dlux-all
+    # Check whether dlux is installed
+    feature:list --installed | grep dlux
+    # Go to ODL
+    http://192.168.150.55:8080/index.html#/topology
+    # Or
+    http://localhost:8080/index.html#/topology
+
+Let get the job done
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: html
+
+    # run Mininet
+    sudo mn -v debug --topo linear,20 --link tc,bw=10,delay=10ms --mac --controller=remote,ip=192.168.150.55,port=6633 --switch=ovs,support=OpenFlow13
+    # Or with custom Topo
+    sudo mn --custom ~/workspace/learning/src/mininet/topo-2sw-2host.py --topo Net1 --mac --controller=remote,ip=192.168.150.55,port=6633 --switch=ovs,support=OpenFlow13
+
+    # start Wireshark as above
+    # start OpenDayLight as above
+
+    # then run
+    pingall
+
+    # and you done
+    # go to ODL dlux or monitor wireshark
+
+
+参考
+-----
+
+`Mininet + OpenDayLight <http://www.brianlinkletter.com/using-the-opendaylight-sdn-controller-with-the-mininet-network-emulator/>`_
+`Mininet Walkthrough <http://mininet.org/walkthrough/>`_
+`Mininet's miniedit <http://www.brianlinkletter.com/how-to-use-miniedit-mininets-graphical-user-interface/>`_
