@@ -110,6 +110,9 @@ Let get the job done
     # and you done
     # go to ODL dlux or monitor wireshark
 
+If you want to create a very complex network, use the miniedit inside tool
+directory.
+See src/simply.py for a working example
 
 参考
 -----
