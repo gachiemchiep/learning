@@ -1,7 +1,7 @@
 # http://wiki.christophchamp.com/index.php?title=OpenStack_deployment_via_packstack_from_RDO
-
-
-
+https://www.rdoproject.org/documentation/packstack-all-in-one-diy-configuration/
+https://docs.openstack.org/image-guide/obtain-images.html
+http://f5-openstack-docs.readthedocs.io/en/latest/guides/map_deploy-guide-next-steps.html
 
 sysctl -a | grep ip_forward #=> 1 (see: sysctl)
 sestatus #=> set to "permissive" (see: selinux)
