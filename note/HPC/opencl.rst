@@ -1,10 +1,13 @@
+.. include:: ../../links.rst
+
 Everything about OpenCL
 ==============================
 
 Set up
 --------
 
-OpenCL library is already included inside cuda took-kit.
+From cuda8_ , download and install cuda tool-kit.
+OpenCL library (version 1.2) is already included inside cuda took-kit.
 
 .. code-block:: html
 
@@ -13,8 +16,9 @@ OpenCL library is already included inside cuda took-kit.
     ....
     Device Version                                  OpenCL 1.2 CUDA
 
-Sample project using eclipse: Eclipse_opencl_.
+After that, set up and run sample opencl project using eclipse: opencl_eclipse_ex0_.
 
-.. _Eclipse_opencl: https://docs.google.com/document/pub?id=1NPo1TK30IOYZxI53t_V3uenSHTMSFYs5cupVDniqVK4
+
+
 
 

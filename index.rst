@@ -7,12 +7,11 @@ Welcome to Learning's documentation!
 ====================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :numbered:
+    :caption: Table of Contents
+    :name: mastertoc
 
-    note/Network/index.rst
     note/HPC/opencl.rst
-    example.rst
     
 
 Indices and tables

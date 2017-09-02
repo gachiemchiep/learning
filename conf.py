@@ -170,5 +170,7 @@ texinfo_documents = [
 ]
 
 # Exclude directories
-exclude_patterns = ['unused/*.rst']
+exclude_patterns = ['unused/*']
+
+numpydoc_show_class_members = False
 
