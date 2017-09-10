@@ -7,4 +7,6 @@
 .. _rst_cheatsheet: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 
-
+.. _ocr_tesseract_github: https://github.com/tesseract-ocr/tesseract
+.. _ocr_tesseract_wiki: https://github.com/tesseract-ocr/tesseract/wiki
+.. _ocr_tesseract_data: https://github.com/tesseract-ocr/tessdata

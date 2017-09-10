@@ -1,6 +1,0 @@
-package abstract_class;
-
-abstract class Account {
-	private String name;
-	private int balance;
-}
