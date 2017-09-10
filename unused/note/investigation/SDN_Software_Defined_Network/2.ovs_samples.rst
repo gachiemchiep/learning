@@ -1,0 +1,7 @@
+OpenvSwitch Samples
+=====================
+
+Star routing using OpenvSwitch flow table rule
+------------------------------------------------
+
+see src/sample1

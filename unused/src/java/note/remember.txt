@@ -1,0 +1,117 @@
+How to compile
+==============
+
+class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
+}
+
+javac Hello.java
+java Hello
+
+javac -encoding UTF8 Test.java
+
+クラスとオブジェクトを作る
+=======================
+
+暮らすを定義
+
+.. code-block:: html
+
+  修飾子 class クラス名 {
+    メンバ変数の定義	属性
+    メソッドの定義		操作
+  }
+
+戻り値がない場合　＝　void
+
+カプセル化
+
+  public	どこでも
+  private	同じクラス
+  protected	同じpackage
+  なし		同じpackageまたサブクラスから
+
+  set()
+  get()
+
+class Account {
+  String name;
+  int balance;
+  void deposis() {}
+  void withdraw() {}
+  void display() {}
+}
+
+Account myAccount = new Account();
+
+this
+
+オーバーロード
+
+オブジェクト指向を極めよう
+======================
+
+「修飾子」　class サブクラス名 extends スーパークラス名 {
+	メンバ変数の定義
+	メソッドの定義
+}
+
+メソッドの再定義
+	オーバーライド
+
+this	: 現在のオブジェクト
+super	: 現在のオブジェクトのスーパークラスのオブジェクト
+
+サブクラスの作成できないクラス
+	
+	final class クラス名 {
+
+	}
+
+キャスト、ダウンキャスト
+
+インタフェースの定義（メソッドの使い方を統一にする）
+
+	「修飾子」interface インタフェース名 {
+		定数の定義
+		抽象メソッドの定義
+	}
+
+インタフェースの実装
+
+	class クラス名 implements インタフェース名 {
+		メソッドのオーバーライド
+	}
+
+has-a 関係		Bank has-a account
+part-of 関係	Cat is part-of animal
+
+package パッケージ名
+
+import package.name
+
+例外
+
+
+2. ライブラリを追加
+
+3. maven
+
+4. 
+
+TODO:  read jdownloader source code
+
+配った資料は初心者向けなので、内容は簡単過ぎる
+
+Note :
+
+when compile java source code
+
+    javac FullPath/FileName.java
+    #
+    # import package.*;
+    # compile with javac filename.java
+    -> javac will look up from current working directory
+    -> in some case, javac could not find source file -> can not compile

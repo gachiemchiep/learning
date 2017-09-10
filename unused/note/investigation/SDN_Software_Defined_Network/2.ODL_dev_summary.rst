@@ -1,0 +1,29 @@
+OpenDayLight Development in Summary
+=======================================
+
+ALl the work can be summaries in the following steps
+
+1. Creat toy networks
+    a. Use mininet, docker, etc to create nodes
+        For docker :
+            create image's instance without network
+            then use pipework to assign
+    b. Use Open vSwitch to bind these nodes together and form a toy networks
+3. Add controller to the toys networks
+    Controller can be 1st generation (POX, NOX, etc)
+    Or 2nd generation : OpenDayLight
+4. By using these Controller's plugins, features, we can program the flow, edit the network configurations, etc
+
+
+http://sdnhub.org/tutorials/opendaylight/
+
+Northbound and Southbound plugins
+
+    Northbound plugins: The two most commonly used northbound plugins are RESTconf (enabled by installing odl-restconf) and NETCONF (enabled by installing odl-netconf-mdsal feature) interface to MD-SAL. Both of these can be used in combination with an intent layer.
+
+    Southbound plugins: OpenFlow plugin (enabled by installing odl-openflowplugin-southbound feature) and NETCONF connector (enabled by installing odl-netconf-connector-all feature) are two commonly used southbound plugins.
+
+Use Eclipse with OpenDayLight OOmph enable to edit the source code
+`https://wiki.opendaylight.org/view/OpenDaylight_Controller:Eclipse_CLI_Setup <https://wiki.opendaylight.org/view/OpenDaylight_Controller:Eclipse_CLI_Setup>`_
+
+Create more complext network

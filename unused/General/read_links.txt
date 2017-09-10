@@ -1,0 +1,73 @@
+電子回路
+=========
+
+電子工学
+    http://monoist.atmarkit.co.jp/mn/series/1799/
+
+わかりやすい
+    http://www.kairo-nyumon.com/index.html
+
+大学の従業
+        http://ps.eei.eng.osaka-u.ac.jp/funaki/notes/class/h22/H22.html
+
+Network :   http://www.infraexpert.com/
+
+
+Serial Terminal Basics
+========================
+
+serial communication:
+    https://learn.sparkfun.com/tutorials/serial-communication
+
+there are two groups synchronous and asynchronous
+
+https://learn.sparkfun.com/tutorials/how-to-read-a-schematic
+
+https://learn.sparkfun.com/tutorials/working-with-wire
+
+https://learn.sparkfun.com/tutorials/analog-vs-digital
+
+https://learn.sparkfun.com/tutorials/logic-levels
+
+https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi
+
+https://learn.sparkfun.com/tutorials/i2c
+
+https://learn.sparkfun.com/tutorials/gps-basics
+
+https://learn.sparkfun.com/tutorials/exploring-xbees-and-xctu-retired
+
+https://learn.sparkfun.com/tutorials/terminal-basics/all
+
+
+Database:
+-----------
+tutorial :
+
+http://www.atmarkit.co.jp/ait/articles/1105/30/news130.html
+
+
+https://www.edifist.co.jp/lecture/dbdesign/index.aspx
+
+
+http://www.atmarkit.co.jp/ait/subtop/jibun/lskill/
+
+http://www.atmarkit.co.jp/ait/articles/1110/31/news129.html
+
+
+http://www.eleki-jack.com/cat21/
+
+組み込み入門者
+--------------
+
+http://keisukekatsuki.hatenablog.com/entry/20110414/p1      -> not useful
+
+http://monoist.atmarkit.co.jp/mn/subtop/features/embedded_index/beginner.html
+
+http://monoist.atmarkit.co.jp/mn/subtop/embedded/   ***
+
+
+NHKの高校講座
+----------------
+
+http://www.nhk.or.jp/kokokoza/tv/sekaishi/   オリエントとギリシア 中
